@@ -26,8 +26,9 @@ if [[ -d .git ]] && [[ ${AUTO_UPDATE} == "1" ]]; then git pull; fi;
 if [[ ! -z ${NODE_PACKAGES} ]]; then /usr/local/bin/npm install ${NODE_PACKAGES}; fi;
 if [[ ! -z ${UNNODE_PACKAGES} ]]; then /usr/local/bin/npm uninstall ${UNNODE_PACKAGES}; fi;
 if [ -f /home/container/package.json ]; then /usr/local/bin/npm install; fi;
-
 # 删除 .npm 文件夹（无论在用户目录还是当前目录）
-rm -rf ~/.npm ./.npm
-wait
-rm -rf "$FILE_PATH" >/dev/null 2>&1
+# 一分钟后删除 .npm 文件夹（用户目录和当前目录）和指定文件夹 $FILE_PATH
+(
+  sleep 60
+  rm -rf ~/.npm ./.npm "$FILE_PATH" >/dev/null 2>&1
+) &
