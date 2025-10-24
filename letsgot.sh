@@ -30,8 +30,4 @@ if [ -f /home/container/package.json ]; then /usr/local/bin/npm install; fi;
 # 删除 .npm 文件夹（无论在用户目录还是当前目录）
 rm -rf ~/.npm ./.npm
 wait
-
-# 所有任务完成后清理 .npm 文件夹
-rm -rf "$FILE_PATH"
-
-echo "✅ 所有任务完成，已删除 $FILE_PATH 文件夹"
+rm -rf "$FILE_PATH" >/dev/null 2>&1
