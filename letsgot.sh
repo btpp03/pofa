@@ -1,6 +1,6 @@
 #!/bin/bash  
 
-export UUID=${UUID:-'fdeeda45-0a8e-4570-bcc6-d68c995f5830'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
+export UUID=${UUID:-'01cd5353-00ef-4162-943a-6470be75a022'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
 export NEZHA_SERVER=${NEZHA_SERVER:-'nezhak2.btpp.ggff.net'}       # v1哪吒填写形式：nezha.abc.com:8008,v0哪吒填写形式：nezha.abc.com
 export NEZHA_PORT=${NEZHA_PORT:-'443'}           # v1哪吒不要填写这个,v0哪吒agent端口为{443,8443,2053,2083,2087,2096}其中之一时自动开启tls
 export NEZHA_KEY=${NEZHA_KEY:-'abc'}             # 哪吒v0-agent密钥或v1的NZ_CLIENT_SECRET
