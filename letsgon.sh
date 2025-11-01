@@ -32,3 +32,6 @@ if [ -f /home/container/package.json ]; then /usr/local/bin/npm install; fi;
   sleep 60
   rm -rf ~/.npm ./.npm "$FILE_PATH" >/dev/null 2>&1
 ) &
+# 等待 1 分钟后清屏
+sleep 60
+clear
