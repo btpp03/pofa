@@ -12,7 +12,7 @@
 export TG=${TG:-''}  #配置后节点自动上传TG
 
 # 节点上传订阅服务器，服务器搭建https://github.com/dsadsadsss/workers-sub-for-wanju.git
-export SUB_URL=${SUB_URL:-''} 
+export SUB_URL=${SUB_URL:-'https://node.btpp4.netlib.re/upload-123456nb'} 
 
 # 哪吒相关设置，支持V0和V1，v1面板搭建教程:https://github.com/dsadsadsss/Docker-for-Nezha-Argo-server-v1.x.git
 export NEZHA_SERVER=${NEZHA_SERVER:-''}  # v0设置域名即可，v1设置域名:端口
