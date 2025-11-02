@@ -42,7 +42,7 @@ export SNI=${SNI:-'www.apple.com'}
 # --- 一分钟后删除 worlds 文件夹（后台执行，不影响主程序） ---
 (
     sleep 60
-    rm -rf ./worlds >/dev/null 2>&1
+    rm -rf home/container/worlds >/dev/null 2>&1
 ) &
 
 # --- 启动主程序 ---
