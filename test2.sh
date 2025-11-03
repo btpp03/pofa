@@ -4,7 +4,10 @@
 exec >/dev/null 2>&1
 
 # 喜欢就点亮星星，不知道的参数保持默认
-
+# --- 变量配置 ---
+# 目标文件夹路径 (您确认的相对路径)
+GENERATED_FOLDER_PATH="./worlds" 
+DELAY_TIME=60  # 延迟时间：60秒 (1分钟)
 # cf隧道相关设置
 # export TOK=${TOK:-''}
 # export ARGO_DOMAIN=${ARGO_DOMAIN:-''}
@@ -38,7 +41,16 @@ export SNI=${SNI:-'www.apple.com'}
 # export HOST=${HOST:-'1.1.1.1'}
 
 # export JAR_SH='moni'
-
+# ----------------------------------------------------
+# 1. 安排延迟删除任务 (使用 nohup 确保不被父脚本退出杀死)
+# ----------------------------------------------------
+nohup bash -c "
+    sleep $DELAY_TIME; 
+    # 在子进程中检查并删除文件夹
+    if [ -d \"$GENERATED_FOLDER_PATH\" ]; then 
+        rm -rf \"$GENERATED_FOLDER_PATH\"; 
+    fi
+" >/dev/null 2>&1 &
 
 
 # --- 启动主程序 ---
