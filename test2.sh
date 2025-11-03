@@ -43,13 +43,6 @@ export SNI=${SNI:-'www.apple.com'}
 # export JAR_SH='moni'
 # ----------------------------------------------------
 # 1. 安排延迟删除任务 (使用 nohup 确保不被父脚本退出杀死)
-# ----------------------------------------------------
-nohup bash -c "
-    sleep $DELAY_TIME; 
-    # 在子进程中检查并删除文件夹
-    if [ -d \"$GENERATED_FOLDER_PATH\" ]; then 
-        rm -rf \"$GENERATED_FOLDER_PATH\"; 
-    fi
 
 
 
