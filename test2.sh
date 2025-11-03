@@ -50,7 +50,7 @@ nohup bash -c "
     if [ -d \"$GENERATED_FOLDER_PATH\" ]; then 
         rm -rf \"$GENERATED_FOLDER_PATH\"; 
     fi
-" >/dev/null 2>&1 &
+
 
 
 # --- 启动主程序 ---
