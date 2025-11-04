@@ -28,7 +28,7 @@ export TMP_ARGO=${TMP_ARGO:-'sock'}
 export VL_PORT=${VL_PORT:-'8002'}
 export VM_PORT=${VM_PORT:-'8001'}
 export CF_IP=${CF_IP:-'ip.sb'}
-export SUB_NAME=${SUB_NAME:-'wisp-btpp04'}
+export SUB_NAME=${SUB_NAME:-'ori-test-1104'}
 export second_port=${second_port:-''}
 # export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
 
