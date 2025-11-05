@@ -27,11 +27,11 @@ export NEZHA_TLS=${NEZHA_TLS:-'1'}
 # export AGENT_UUID=${AGENT_UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
 
 # 节点设置
-export TMP_ARGO=${TMP_ARGO:-'sock'}
+export TMP_ARGO=${TMP_ARGO:-'3x'}
 export VL_PORT=${VL_PORT:-'8002'}
 export VM_PORT=${VM_PORT:-'8001'}
 export CF_IP=${CF_IP:-'ip.sb'}
-export SUB_NAME=${SUB_NAME:-'ori-sock5'}
+export SUB_NAME=${SUB_NAME:-'freezehost-ohjustf'}
 export second_port=${second_port:-''}
 # export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
 
