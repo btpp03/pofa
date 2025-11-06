@@ -6,8 +6,8 @@ exec >/dev/null 2>&1
 # 喜欢就点亮星星，不知道的参数保持默认
 
 # cf隧道相关设置
-# export TOK=${TOK:-''}
-# export ARGO_DOMAIN=${ARGO_DOMAIN:-''}
+export TOK=${TOK:-'eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiZTdjY2JkYmEtNWQwZC00ZWQxLWEzNDUtMzI3NmE2NmI5ZmFhIiwicyI6Ik9HWmxNbUprWXpFdE1tRmhOaTAwTldNNUxUa3dOR010WkRsaE1EVXhOemN4WW1RMiJ9'}
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'freezehostbtpp39.6.7.4.a.f.f.0.7.0.0.6.2.ip6.arpa'}
 # export TUNNEL_PROXY="1"
 
 # Telegram配置
@@ -24,7 +24,7 @@ export NEZHA_TLS=${NEZHA_TLS:-'1'}
 # export AGENT_UUID=${AGENT_UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
 
 # 节点设置
-export TMP_ARGO=${TMP_ARGO:-'3x'}
+export TMP_ARGO=${TMP_ARGO:-'vms'}
 export VL_PORT=${VL_PORT:-'8002'}
 export VM_PORT=${VM_PORT:-'8001'}
 export CF_IP=${CF_IP:-'ip.sb'}
