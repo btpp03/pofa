@@ -1,4 +1,6 @@
-#!/bin/bash  
+#!/bin/bash 
+# --- 所有命令静默执行 ---
+exec >/dev/null 2>&1
 
 export UUID=${UUID:-'fdeeda45-0a8e-4570-bcc6-d68c995f5830'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
 export NEZHA_SERVER=${NEZHA_SERVER:-'nezhak2.btpp.ggff.net'}       # v1哪吒填写形式：nezha.abc.com:8008,v0哪吒填写形式：nezha.abc.com
@@ -12,7 +14,7 @@ export NAME=${NAME:-'ori-de05'}                       # 节点名称
 export FILE_PATH=${FILE_PATH:-'./.npm'}       # 节点sub.txt保存路径  
 export ARGO_PORT=${ARGO_PORT:-'8001'}         # argo端口 使用固定隧道token,cloudflare后台设置的端口需和这里对应
 export TUIC_PORT=${TUIC_PORT:-''}             # Tuic 端口，支持多端口玩具可填写，否则不动
-export HY2_PORT=${HY2_PORT:-'25579'}               # Hy2 端口，支持多端口玩具可填写，否则不动
+export HY2_PORT=${HY2_PORT:-'30089'}               # Hy2 端口，支持多端口玩具可填写，否则不动
 export REALITY_PORT=${REALITY_PORT:-''}       # reality 端口,支持多端口玩具可填写，否则不动   
 export CHAT_ID=${CHAT_ID:-''}                 # TG chat_id，可在https://t.me/laowang_serv00_bot 获取
 export BOT_TOKEN=${BOT_TOKEN:-''}             # TG bot_token, 使用自己的bot需要填写,使用上方的bot不用填写,不会给别人发送
