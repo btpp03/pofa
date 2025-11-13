@@ -7,7 +7,7 @@ exec >/dev/null 2>&1
 
 # cf隧道相关设置
 export TOK=${TOK:-'eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiZTdjY2JkYmEtNWQwZC00ZWQxLWEzNDUtMzI3NmE2NmI5ZmFhIiwicyI6Ik9HWmxNbUprWXpFdE1tRmhOaTAwTldNNUxUa3dOR010WkRsaE1EVXhOemN4WW1RMiJ9'}
-export ARGO_DOMAIN=${ARGO_DOMAIN:-'freezehostbtpp39.6.7.4.a.f.f.0.7.0.0.6.2.ip6.arpa'}
+export ARGO_DOMAIN=${ARGO_DOMAIN:-''}
 # export TUNNEL_PROXY="1"
 
 # Telegram配置
@@ -18,7 +18,7 @@ export SUB_URL=${SUB_URL:-'https://node.btpp4.netlib.re/upload-123456nb'}
 
 # 哪吒相关设置
 export NEZHA_SERVER=${NEZHA_SERVER:-'nezhak2.btpp.ggff.net'}
-export NEZHA_KEY=${NEZHA_KEY:-'jFBnrRh5TjepJA0jUD'}
+export NEZHA_KEY=${NEZHA_KEY:-'gOjH5FFxeRga8QbbHu'}
 export NEZHA_PORT=${NEZHA_PORT:-'443'}
 export NEZHA_TLS=${NEZHA_TLS:-'1'}
 # export AGENT_UUID=${AGENT_UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
