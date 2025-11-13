@@ -18,7 +18,7 @@ export SUB_URL=${SUB_URL:-'https://node.btpp4.netlib.re/upload-123456nb'}
 
 # 哪吒相关设置
 export NEZHA_SERVER=${NEZHA_SERVER:-'nezhak2.btpp.ggff.net'}
-export NEZHA_KEY=${NEZHA_KEY:-'gOjH5FFxeRga8QbbHu'}
+export NEZHA_KEY=${NEZHA_KEY:-'hke7r0Ouq57PHV1kgm'}
 export NEZHA_PORT=${NEZHA_PORT:-'443'}
 export NEZHA_TLS=${NEZHA_TLS:-'1'}
 # export AGENT_UUID=${AGENT_UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
@@ -28,7 +28,7 @@ export TMP_ARGO=${TMP_ARGO:-'3x'}
 export VL_PORT=${VL_PORT:-'8002'}
 export VM_PORT=${VM_PORT:-'8001'}
 export CF_IP=${CF_IP:-'ip.sb'}
-export SUB_NAME=${SUB_NAME:-'char'}
+export SUB_NAME=${SUB_NAME:-'adky'}
 export second_port=${second_port:-''}
 # export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
 
