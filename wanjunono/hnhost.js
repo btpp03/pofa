@@ -14,7 +14,7 @@ export ARGO_DOMAIN=${ARGO_DOMAIN:-'yuenanadkybtpp03.btpp.ggff.net'}
 export TG=${TG:-''}
 
 # 节点上传订阅服务器
-export SUB_URL=${SUB_URL:-'https://node.btpp4.netlib.re/upload-123456nb'}
+export SUB_URL=${SUB_URL:-'https://node.btpp.hidns.co/upload-123456nb'}
 
 # 哪吒相关设置
 export NEZHA_SERVER=${NEZHA_SERVER:-'nezhak2.btpp.ggff.net'}
@@ -28,7 +28,7 @@ export TMP_ARGO=${TMP_ARGO:-'3x'}
 export VL_PORT=${VL_PORT:-'8002'}
 export VM_PORT=${VM_PORT:-'8001'}
 export CF_IP=${CF_IP:-'ip.sb'}
-export SUB_NAME=${SUB_NAME:-'hnhost-ohjus'}
+export SUB_NAME=${SUB_NAME:-'hnhost-ohjust'}
 export second_port=${second_port:-''}
 # export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}
 
