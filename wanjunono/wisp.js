@@ -14,7 +14,7 @@ export ARGO_DOMAIN=${ARGO_DOMAIN:-''}
 export TG=${TG:-''}
 
 # 节点上传订阅服务器
-export SUB_URL=${SUB_URL:-'https://node.btpp4.netlib.re/upload-123456nb'}
+export SUB_URL=${SUB_URL:-'https://node.btpp.hidns.co/upload-123456nb'}
 
 # 哪吒相关设置
 export NEZHA_SERVER=${NEZHA_SERVER:-'nezhak2.btpp.ggff.net'}
