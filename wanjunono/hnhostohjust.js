@@ -6,8 +6,8 @@ exec >/dev/null 2>&1
 # 喜欢就点亮星星，不知道的参数保持默认
 
 # cf隧道相关设置
-export TOK=${TOK:-'eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiZTdjY2JkYmEtNWQwZC00ZWQxLWEzNDUtMzI3NmE2NmI5ZmFhIiwicyI6Ik9HWmxNbUprWXpFdE1tRmhOaTAwTldNNUxUa3dOR010WkRsaE1EVXhOemN4WW1RMiJ9'}
-export ARGO_DOMAIN=${ARGO_DOMAIN:-'yuenanadkybtpp03.btpp.ggff.net'}
+export TOK=${TOK:-'eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiODA5MDk1NWEtMWRmMi00MTgyLWI4YzctNjg2MjViZGVlMzg1IiwicyI6IlkySTNabVkwWW1VdFlURTJZaTAwWmpNMkxXSTJaVFl0TTJNME1HWTRPVFEwWVRGayJ9'}
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'hnhostohjust.btppone.hidns.vip'}
 # export TUNNEL_PROXY="1"
 
 # Telegram配置
