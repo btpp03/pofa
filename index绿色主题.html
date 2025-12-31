@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Life · Green Living</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== 原 CSS 保持不变，仅复用 ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        :root {
+            --primary: #2e7d32;
+            --secondary: #4caf50;
+            --accent: #8bc34a;
+            --light: #e8f5e9;
+            --dark: #1b5e20;
+            --text: #333;
+            --white: #fff;
+        }
+
+        body { background-color: var(--light); color: var(--text); line-height: 1.6; }
+
+        header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,.1);
+        }
+
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 1.8rem; font-weight: 700; }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 2rem; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: 500; }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.35)),
+            url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; margin-bottom: 2rem; }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: .8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        section { padding: 5rem 0; }
+
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2.5rem; color: var(--primary); }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-img img { width: 100%; border-radius: 12px; }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .initiatives { background: #fff; }
+
+        .initiatives-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .initiative-card {
+            background: var(--light);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .initiative-img img { width: 100%; height: 200px; object-fit: cover; }
+
+        .initiative-content { padding: 1.5rem; }
+
+        footer {
+            background: var(--dark);
+            color: #fff;
+            padding: 3rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-content,
+            .initiatives-grid,
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container nav-container">
+        <div class="logo">
+            <i class="fas fa-seedling"></i>
+            <span>Plant Life</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于植物</a></li>
+                <li><a href="#plants">植物分类</a></li>
+                <li><a href="#tips">养护技巧</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <h1>让植物，点亮生活</h1>
+        <p>记录绿植之美 · 分享养护经验 · 回归自然节奏</p>
+        <a href="#plants" class="btn">探索植物</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>关于这个植物主页</h2>
+            <p>用最简单的方式，亲近自然</p>
+        </div>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+            </div>
+            <div>
+                <h3>植物，是生活的一部分</h3>
+                <p>这里记录各种室内植物、阳台绿植、多肉与园艺经验。</p>
+                <p>希望通过绿色，让生活慢下来。</p>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <i class="fas fa-leaf"></i>
+                <h3>120+</h3>
+                <p>植物品种</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-seedling"></i>
+                <h3>300+</h3>
+                <p>养护笔记</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-sun"></i>
+                <h3>365</h3>
+                <p>日常记录</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-heart"></i>
+                <h3>∞</h3>
+                <p>热爱自然</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Plants -->
+<section class="initiatives" id="plants">
+    <div class="container">
+        <div class="section-title">
+            <h2>植物分类</h2>
+            <p>从好养到进阶</p>
+        </div>
+
+        <div class="initiatives-grid">
+            <div class="initiative-card">
+                <div class="initiative-img">
+                    <img src="https://images.unsplash.com/photo-1509223197845-458d87318791">
+                </div>
+                <div class="initiative-content">
+                    <h3>室内绿植</h3>
+                    <p>龟背竹、琴叶榕、绿萝等耐阴植物。</p>
+                </div>
+            </div>
+
+            <div class="initiative-card">
+                <div class="initiative-img">
+                    <img src="https://images.unsplash.com/photo-1498842812179-c81beecf902c">
+                </div>
+                <div class="initiative-content">
+                    <h3>多肉植物</h3>
+                    <p>小巧可爱，适合新手与阳台。</p>
+                </div>
+            </div>
+
+            <div class="initiative-card">
+                <div class="initiative-img">
+                    <img src="https://images.unsplash.com/photo-1524594157360-3de0b9d9cfc3">
+                </div>
+                <div class="initiative-content">
+                    <h3>大型观叶</h3>
+                    <p>提升空间氛围感的绿植选择。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="container">
+        <p style="text-align:center;">
+            © 2025 Plant Life · Built with 🌿
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
