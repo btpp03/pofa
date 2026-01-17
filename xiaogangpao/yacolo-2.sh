@@ -3,7 +3,7 @@
 export UUID='faacf142-dee8-48c2-8558-641123eb939c'
 export NEZHA_SERVER='nezhak2.btpp.ggff.net'
 export NEZHA_PORT='443'
-export NEZHA_KEY='BoPDvmKkjfJugQWY8G'
+export NEZHA_KEY='fzEzZLARboeD4OzTZz'
 export HY2_PORT=''
 export ARGO_DOMAIN='yacolomoscow2.ohjusta.nyc.mn'
 export ARGO_AUTH='eyJhIjoiZmJkN2VhODFlMjI1MWIzMWMyYmJmNWJmZTFkY2Q3OWEiLCJ0IjoiNjcwZmI2N2ItMWUxMS00Y2RhLWI2OTktYjA1NzM0YjMzZWU5IiwicyI6Ik9EY3pOMlZtWTJRdE16azRaUzAwWmpRM0xXRmhOV0V0WXpkaU5HSTBORGc1Wm1ReiJ9'
