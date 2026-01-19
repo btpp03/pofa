@@ -3,7 +3,7 @@
 export UUID='faacf142-dee8-48c2-8558-641123eb939c'
 export NEZHA_SERVER='nezhak2.btpp.ggff.net'
 export NEZHA_PORT='443'
-export NEZHA_KEY='ApIwlKMqSExpjOFo6f'
+export NEZHA_KEY='LxOLxrvpD4H7SyDzzW'
 export HY2_PORT=''
 export ARGO_DOMAIN='hostgta.btpp.ggff.net'
 export ARGO_AUTH='eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiMDkxYzU4MTgtZTJhMC00MWM4LTlhNjktNzBlYTA2NjdjZWFmIiwicyI6Ik4yWTJNall4TTJVdFpHWTBNaTAwTUdGaExUaGhaVFl0WVdJNVptVXpPREZsTWpRMCJ9'
