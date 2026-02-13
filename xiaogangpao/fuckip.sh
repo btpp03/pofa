@@ -3,9 +3,9 @@
 export UUID='faacf142-dee8-48c2-8558-641123eb939c'
 export NEZHA_SERVER='nezhak2.btpp.ggff.net'
 export NEZHA_PORT='443'
-export NEZHA_KEY='v4ceLeQfPNRHstWauQ'
-export HY2_PORT='3010'
-export ARGO_DOMAIN='mlxy.btppone.hidns.vip'
+export NEZHA_KEY='saaAKqEDlYSu0RGRNX'
+export HY2_PORT=''
+export ARGO_DOMAIN='njghostingbtpp39.btppone.hidns.vip'
 export ARGO_AUTH='eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiZTdjY2JkYmEtNWQwZC00ZWQxLWEzNDUtMzI3NmE2NmI5ZmFhIiwicyI6Ik9HWmxNbUprWXpFdE1tRmhOaTAwTldNNUxUa3dOR010WkRsaE1EVXhOemN4WW1RMiJ9'
 export CFIP='jd.bp.cloudns.ch'
 
