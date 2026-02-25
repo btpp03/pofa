@@ -4,7 +4,7 @@ const fs = require('fs');
 function runScriptWithEnv() {
     const envVars = {
         UUID: 'faacf142-dee8-48c2-8558-641123eb939c',
-        NEZHA_SERVER: 'nezha.mingfei1981.eu.org',
+        NEZHA_SERVER: 'nezhak2.btpp.ggff.net',
         NEZHA_PORT: '443',
         NEZHA_KEY: 'BPE30BICd8kvO84006',
         HY2_PORT: '7860',
