@@ -3,10 +3,10 @@
 export UUID='faacf142-dee8-48c2-8558-641123eb939c'
 export NEZHA_SERVER='nezhak2.btpp.ggff.net'
 export NEZHA_PORT='443'
-export NEZHA_KEY=''
+export NEZHA_KEY='WRl60XFQyeWCw9Veoa'
 export HY2_PORT=''
-export ARGO_DOMAIN='mlxy.btppone.hidns.vip'
-export ARGO_AUTH='eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiZTdjY2JkYmEtNWQwZC00ZWQxLWEzNDUtMzI3NmE2NmI5ZmFhIiwicyI6Ik9HWmxNbUprWXpFdE1tRmhOaTAwTldNNUxUa3dOR010WkRsaE1EVXhOemN4WW1RMiJ9'
+export ARGO_DOMAIN='teoheberg.btppone.hidns.vip'
+export ARGO_AUTH='eyJhIjoiYmJmMDc4YjVkYjlhMzcwMmFiYTg3OGQyODYxMDUwMDciLCJ0IjoiNThmZDVhODgtM2I3My00ZGI5LThiMDYtMTg2MDY1ODVhODJmIiwicyI6Ik9XRXpPREJqWW1NdFpEQTJOUzAwWkdNNExUaGhaR1V0TVdSbU1UZzNOR1ZoTURJNSJ9'
 export CFIP='jd.bp.cloudns.ch'
 
 SCRIPT_URL='https://main.ssss.nyc.mn/sb.sh'
