@@ -52,6 +52,12 @@ if [ -s "$RUN/cf_token" ]; then
     chmod +x "$BIN/cloudflared" 2>/dev/null
   fi
   if [ -x "$BIN/cloudflared" ]; then
+    TOKSHA="$(sha1sum "$RUN/cf_token" 2>/dev/null | cut -c1-40)"
+    if [ -f "$RUN/cf_token.sha" ] && [ "$TOKSHA" != "$(cat "$RUN/cf_token.sha" 2>/dev/null)" ]; then
+      pkill -u "$(id -u)" -f 'cloudflared tunnel' >/dev/null 2>&1
+      sleep 2
+    fi
+    echo "$TOKSHA" > "$RUN/cf_token.sha" 2>/dev/null
     if ! pgrep -u "$(id -u)" -f 'cloudflared tunnel' >/dev/null 2>&1; then
       : > "$LOG/cf.log"
       setsid nohup "$BIN/cloudflared" tunnel --no-autoupdate run --token "$(cat "$RUN/cf_token")" \
