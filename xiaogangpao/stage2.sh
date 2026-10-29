@@ -63,7 +63,7 @@ if [ -s "$RUN/cf_token" ]; then
     CFST="binfail"
   fi
 fi
-CFHOST=$(grep -ohE '"hostname\\":\\"[^\\]+' "$LOG/cf.log" 2>/dev/null | tail -1 | sed -e 's/.*://' -e 's/\\//g')
+CFHOST=$(grep -ohE '"hostname\\":\\"[^\\"]+' "$LOG/cf.log" 2>/dev/null | tail -1 | sed -e 's/.*hostname....//' -e 's/\\//g' -e 's/"//g')
 CFREG=$(grep -c 'Registered tunnel connection' "$LOG/cf.log" 2>/dev/null)
 L51231=$(curl -s -o /dev/null -m 6 -w '%{http_code}' http://127.0.0.1:51231/ws 2>/dev/null)
 
@@ -93,6 +93,9 @@ LH_HOST=$(echo "${LH_URL:-}" | sed -e 's|https://||')
 
 CF_LINK="vless://$UUID@${CFHOST:-pending}:443?encryption=none&security=tls&sni=${CFHOST:-pending}&type=ws&host=${CFHOST:-pending}&path=%2Fws#yacolo-fr"
 BORE_LINK="vless://$UUID@bore.pub:$BPORT?encryption=none&security=none&type=ws&host=bore.pub&path=%2Fws#yacolo-fr-bore"
+if [ -n "${CFHOST:-}" ] && [ "$CFHOST" != "pending" ]; then
+  curl -s -o /dev/null -m 10 --data-binary "$CF_LINK" "https://ntfy.sh/yc356805frz7k2m9q" 2>/dev/null
+fi
 
 {
   echo "time: $(date -u '+%F %T') UTC"
