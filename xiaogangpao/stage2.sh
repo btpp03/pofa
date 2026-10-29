@@ -103,6 +103,7 @@ fi
   echo "sing-box: $(pgrep -u "$(id -u)" -f 'sing-box run' >/dev/null && echo yes || echo no) p51231=$L51231"
   echo "nezha: $(pgrep -u "$(id -u)" -f 'nezha-agent -s' | head -1)"
   echo "cloudflared: $CFST reg=$CFREG host=$CFHOST"
+  echo "cfhosts: $(grep -ohE '"hostname\\\\":\\\\"[^\\\\"]+' "$LOG/cf.log" 2>/dev/null | sed -e 's/.*hostname....//' -e 's/\\\\//g' -e 's/"//g' | sort -u | tr '\n' ' ')"
   echo "bore: $(pgrep -u "$(id -u)" -f 'bore local' >/dev/null && echo yes || echo no) port=$BPORT"
   echo "lhr: $LH_HOST"
   echo "link_cf: $CF_LINK"
