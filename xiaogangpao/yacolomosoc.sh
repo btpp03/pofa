@@ -5,6 +5,14 @@ H="${HOME:-/var/www/yacolo356805/data}"
 RAW="https://raw.githubusercontent.com/btpp03/pofa/refs/heads/main/xiaogangpao"
 mkdir -p "$H/log" "$H/run" "$H/www" "$H/bin" 2>/dev/null
 
+# throttle: cron still fires every 2 min, but real work runs at most once per ~10 min
+STAMP="$H/run/last_tick"
+now=$(date +%s)
+last=$(cat "$STAMP" 2>/dev/null || echo 0)
+case "$last" in ''|*[!0-9]*) last=0 ;; esac
+if [ $((now - last)) -lt 540 ]; then exit 0; fi
+echo "$now" > "$STAMP" 2>/dev/null
+
 # one-time environment probe
 if [ ! -f "$H/run/probed" ]; then
   {
